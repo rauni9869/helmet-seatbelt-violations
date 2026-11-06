@@ -75,6 +75,16 @@ plate OCR exact match 0.48, character error rate 0.22. Notes for improving the p
   `FONTS` path, otherwise training runs without the synthetic characters.
 - Training needs ~3.5 GB GPU memory and enough RAM for 6 data-loader workers; use `--workers 3` on 8-16 GB RAM.
 
+## Demo
+
+```
+python app.py                     # web demo at http://127.0.0.1:7860
+```
+Three tabs: **Image** (upload or pick an example; annotated result and a table of violations with plate text),
+**Compare** (detector only vs. full system side by side: shows the false "no helmet" on cars and helmeted riders that
+the helmet classifier removes) and **Video** (annotates every n-th frame and lists each violation once, with the best
+plate reading over all frames). Example inputs are in `demo_examples/`.
+
 ## Running
 
 ```
@@ -103,3 +113,4 @@ python pipeline.py --video some.mp4
 | `ocr.py`, `eval_ocr.py` | plate reading pipeline and its evaluation |
 | `helmetnet.py`, `train_helmet.py` | second-stage helmet classifier (helmet / no helmet / not a rider) and its training |
 | `pipeline.py` | complete violation system |
+| `app.py` | Gradio web demo (image, compare, video) |

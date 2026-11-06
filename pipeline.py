@@ -231,6 +231,11 @@ def example_figure(examples):
         cand = [e for e in examples if e[0]["ds"] == ds and any(v["type"] == want for v in e[3])]
         cand.sort(key=lambda e: -sum(v["plate"] is not None and v["type"] == want for v in e[3]))
         pick += cand[:2]
+    # fill the last row with further helmet violators whose plate was read
+    more = [e for e in examples if e[0]["ds"] in ("helmetviol", "riderhp") and all(e is not p for p in pick)
+            and any(v["type"] == "no helmet" and v["text"] for v in e[3])]
+    more.sort(key=lambda e: -max(v["ocr_conf"] for v in e[3]))
+    pick += more[:-len(pick) % 4]
     tiles = []
     for r, src, dets, viols in pick:
         im = draw(src, dets, viols)

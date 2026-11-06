@@ -5,4 +5,5 @@ numpy==2.5.3
 opencv-python==5.0.0.93
 matplotlib==3.11.2
 pillow==12.3.0
+gradio  # web demo (app.py)
 kaggle  # only needed to re-download the raw datasets
