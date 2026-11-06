@@ -1,0 +1,16 @@
+train: 28400 Kaggle + 28000 synthetic + 653 dev-plate characters (x10)
+epoch 1: loss 0.4845 kaggle val acc 0.9955 synthetic val acc 0.9948
+epoch 2: loss 0.4877 kaggle val acc 0.9986 synthetic val acc 0.9990
+epoch 3: loss 0.4448 kaggle val acc 0.9997 synthetic val acc 0.9976
+epoch 4: loss 0.4220 kaggle val acc 0.9992 synthetic val acc 0.9995
+epoch 5: loss 0.4196 kaggle val acc 0.9997 synthetic val acc 0.9986
+epoch 6: loss 0.4306 kaggle val acc 0.9997 synthetic val acc 0.9967
+epoch 7: loss 0.4445 kaggle val acc 0.9997 synthetic val acc 1.0000
+epoch 8: loss 0.4085 kaggle val acc 0.9997 synthetic val acc 0.9990
+epoch 9: loss 0.4027 kaggle val acc 0.9997 synthetic val acc 0.9995
+epoch 10: loss 0.4060 kaggle val acc 0.9997 synthetic val acc 1.0000
+epoch 11: loss 0.4088 kaggle val acc 0.9997 synthetic val acc 1.0000
+epoch 12: loss 0.4001 kaggle val acc 0.9997 synthetic val acc 1.0000
+Kaggle test: accuracy 0.9994 (3550 images)
+test-plate characters (GT boxes): accuracy 0.9599 (1373 images)
+Most frequent confusions on test plates (true, pred): count [(('0', 'D'), 3), (('F', 'E'), 2), (('U', 'T'), 2), (('1', 'I'), 2), (('4', 'H'), 2), (('S', 'G'), 1), (('P', 'Q'), 1), (('E', 'B'), 1)]

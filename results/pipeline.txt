@@ -1,0 +1,7 @@
+Violation-level evaluation on the test split (150 images, IoU >= 0.5)
+rider_nohelmet  TP  17 FP   2 FN   3  precision 0.895 recall 0.850 F1 0.872
+                correct plate linked for 15/17 detected violators with a labelled plate
+no_seatbelt     TP  11 FP  15 FN   7  precision 0.423 recall 0.611 F1 0.500
+                correct vehicle linked for 11/11 detected violators with a labelled vehicle
+                plus 0 'no helmet' detections on the seat-belt (car-only) images, not counted above
+Predicted violations: 49; with a linked plate: 19; with a non-empty plate reading: 19

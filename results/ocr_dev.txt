@@ -1,0 +1,6 @@
+Plate OCR on the dev split (69 plates)
+Character segmentation (IoU>=0.5): precision 0.8646 recall 0.8315
+Character classification on ground-truth boxes: accuracy 0.7642 (653 characters)
+End-to-end, full pipeline: exact plate match 0.1449, character error rate 0.3323
+End-to-end, without format-constrained decoding: exact plate match 0.0725, character error rate 0.3629
+End-to-end, without Hough deskew: exact plate match 0.1594, character error rate 0.3231

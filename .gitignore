@@ -1,0 +1,35 @@
+# datasets: download from Kaggle (see README), prepare_data.py rebuilds data/processed
+data/raw/
+data/processed/images/
+data/processed/chars.npz
+
+# trained weights: attached to the GitHub release (see README)
+runs/*.pt
+
+# generated outputs (pipeline.py --eval rebuilds them)
+outputs/
+
+# tools and build artefacts
+tools/
+paper_overleaf.zip
+*.aux
+*.log
+!runs/*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+
+# one-off helper
+_fix.py
+
+# Python / OS
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# write-up (kept locally, not in the repository)
+paper/
+report/

@@ -1,0 +1,22 @@
+train samples per class {'helmet': 1281, 'no helmet': 1320, 'not a rider': 1289}, val {'helmet': 43, 'no helmet': 56, 'not a rider': 171}
+epoch 1: loss 0.1988 val accuracy 0.9444 balanced 0.9093
+epoch 2: loss 0.1796 val accuracy 0.9444 balanced 0.9071
+epoch 3: loss 0.1795 val accuracy 0.9556 balanced 0.9272
+epoch 4: loss 0.1841 val accuracy 0.9519 balanced 0.9190
+epoch 5: loss 0.1782 val accuracy 0.9519 balanced 0.9230
+epoch 6: loss 0.1763 val accuracy 0.9704 balanced 0.9488
+epoch 7: loss 0.1763 val accuracy 0.9704 balanced 0.9488
+epoch 8: loss 0.1750 val accuracy 0.9667 balanced 0.9428
+epoch 9: loss 0.1746 val accuracy 0.9667 balanced 0.9428
+epoch 10: loss 0.1744 val accuracy 0.9741 balanced 0.9547
+epoch 11: loss 0.1767 val accuracy 0.9519 balanced 0.9230
+epoch 12: loss 0.1749 val accuracy 0.9704 balanced 0.9488
+epoch 13: loss 0.1794 val accuracy 0.9556 balanced 0.9250
+epoch 14: loss 0.1733 val accuracy 0.9630 balanced 0.9369
+epoch 15: loss 0.1722 val accuracy 0.9556 balanced 0.9250
+val: accuracy 0.9741 | recall per class: helmet 0.953 (n=43) no helmet 0.911 (n=56) not a rider 1.000 (n=171)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[41, 2, 0], [5, 51, 0], [0, 0, 171]]
+test: accuracy 0.9607 | recall per class: helmet 0.947 (n=38) no helmet 0.891 (n=46) not a rider 0.986 (n=145)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[36, 2, 0], [5, 41, 0], [0, 2, 143]]

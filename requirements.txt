@@ -1,0 +1,8 @@
+# Python 3.13; install torch/torchvision with the CUDA build matching your GPU, see https://pytorch.org
+torch==2.14.1
+torchvision==0.29.1
+numpy==2.5.3
+opencv-python==5.0.0.93
+matplotlib==3.11.2
+pillow==12.3.0
+kaggle  # only needed to re-download the raw datasets

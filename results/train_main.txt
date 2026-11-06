@@ -1,0 +1,47 @@
+epoch 1: cls 0.7522 box 0.5472 (111s)
+epoch 2: cls 0.4231 box 0.4133 (58s)
+epoch 3: cls 0.3536 box 0.3434 (68s)
+epoch 4: cls 0.3081 box 0.2942 (96s)
+epoch 5: cls 0.2759 box 0.2676 (106s) | val mAP@0.5 0.5572 rider_helmet 0.358 rider_nohelmet 0.575 car 0.886 seatbelt 0.120 no_seatbelt 0.486 plate 0.919
+epoch 6: cls 0.2535 box 0.2455 (59s)
+epoch 7: cls 0.2353 box 0.2306 (57s)
+epoch 8: cls 0.2245 box 0.2266 (59s)
+epoch 9: cls 0.2171 box 0.2151 (58s)
+epoch 10: cls 0.2078 box 0.2045 (58s) | val mAP@0.5 0.6383 rider_helmet 0.406 rider_nohelmet 0.685 car 0.906 seatbelt 0.249 no_seatbelt 0.633 plate 0.951
+epoch 11: cls 0.2077 box 0.2024 (58s)
+epoch 12: cls 0.1930 box 0.1950 (58s)
+epoch 13: cls 0.1878 box 0.1886 (57s)
+epoch 14: cls 0.1858 box 0.1839 (58s)
+epoch 15: cls 0.1898 box 0.1850 (58s) | val mAP@0.5 0.6530 rider_helmet 0.540 rider_nohelmet 0.637 car 0.923 seatbelt 0.246 no_seatbelt 0.604 plate 0.969
+epoch 16: cls 0.1796 box 0.1738 (106s)
+epoch 17: cls 0.1759 box 0.1719 (112s)
+epoch 18: cls 0.1738 box 0.1668 (138s)
+epoch 19: cls 0.1742 box 0.1693 (132s)
+epoch 20: cls 0.1677 box 0.1609 (61s) | val mAP@0.5 0.6662 rider_helmet 0.547 rider_nohelmet 0.693 car 0.947 seatbelt 0.260 no_seatbelt 0.578 plate 0.972
+epoch 21: cls 0.1680 box 0.1603 (57s)
+epoch 22: cls 0.1624 box 0.1550 (57s)
+epoch 23: cls 0.1612 box 0.1526 (58s)
+epoch 24: cls 0.1554 box 0.1487 (57s)
+epoch 25: cls 0.1564 box 0.1486 (57s) | val mAP@0.5 0.6790 rider_helmet 0.637 rider_nohelmet 0.704 car 0.957 seatbelt 0.251 no_seatbelt 0.557 plate 0.968
+epoch 26: cls 0.1579 box 0.1487 (57s)
+epoch 27: cls 0.1536 box 0.1412 (58s)
+epoch 28: cls 0.1504 box 0.1408 (59s)
+epoch 29: cls 0.1475 box 0.1372 (58s)
+epoch 30: cls 0.1440 box 0.1333 (58s) | val mAP@0.5 0.7206 rider_helmet 0.711 rider_nohelmet 0.716 car 0.969 seatbelt 0.259 no_seatbelt 0.701 plate 0.968
+epoch 31: cls 0.1453 box 0.1318 (57s)
+epoch 32: cls 0.1424 box 0.1305 (108s)
+epoch 33: cls 0.1385 box 0.1262 (85s)
+epoch 34: cls 0.1381 box 0.1251 (58s)
+epoch 35: cls 0.1361 box 0.1197 (58s) | val mAP@0.5 0.6938 rider_helmet 0.661 rider_nohelmet 0.748 car 0.959 seatbelt 0.226 no_seatbelt 0.604 plate 0.965
+epoch 36: cls 0.1348 box 0.1183 (56s)
+epoch 37: cls 0.1329 box 0.1179 (57s)
+epoch 38: cls 0.1311 box 0.1142 (66s)
+epoch 39: cls 0.1309 box 0.1130 (88s)
+epoch 40: cls 0.1295 box 0.1093 (1582s) | val mAP@0.5 0.7204 rider_helmet 0.735 rider_nohelmet 0.758 car 0.974 seatbelt 0.261 no_seatbelt 0.622 plate 0.974
+epoch 41: cls 0.1246 box 0.1050 (107s)
+epoch 42: cls 0.1214 box 0.1057 (119s)
+epoch 43: cls 0.1234 box 0.1050 (131s)
+epoch 44: cls 0.1209 box 0.1008 (114s)
+epoch 45: cls 0.1198 box 0.0974 (393s) | val mAP@0.5 0.7386 rider_helmet 0.805 rider_nohelmet 0.816 car 0.960 seatbelt 0.299 no_seatbelt 0.580 plate 0.972
+epoch 46: cls 0.1153 box 0.0965 (116s)
+epoch 47: cls 0.1181 box 0.0965 (104s)
