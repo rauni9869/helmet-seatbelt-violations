@@ -39,7 +39,7 @@ Download with the Kaggle CLI, e.g.
 1. `pip install -r requirements.txt` (install PyTorch with CUDA from pytorch.org; on a Mac the default build uses
    the Apple GPU through MPS).
 2. **Trained weights** are not stored in git (the detector is 96 MB). Download `det_main.pt`, `charnet.pt` and
-   `helmetnet.pt` from the [Releases page](https://github.com/rauni9869/helmet-seatbelt-violations/releases) into `runs/`.
+   `helmetnet.pt` (and optionally `helmetnet_overhead.pt`) from the [Releases page](https://github.com/rauni9869/helmet-seatbelt-violations/releases) into `runs/`.
 3. **Datasets:** download the 7 Kaggle datasets above into `data/raw/` and run `python prepare_data.py`. The
    split files (`data/processed/train.json`, `val.json`, `test.json`), the anchors and the OCR sets are in git,
    and `prepare_data.py` rebuilds the same split (fixed seeds).
@@ -95,6 +95,8 @@ python eval_detector.py           # test mAP, PR curves, thresholds             
 python eval_detector.py --name nomask
 python train_chars.py             # character CNN                                        -> runs/charnet.pt
 python train_helmet.py            # helmet classifier on rider crops                      -> runs/helmetnet.pt
+python overhead_crops.py          # top-view two-wheeler crops by background subtraction  -> data/processed/overhead/
+python train_helmet_overhead.py   # top-view helmet classifier (labels.txt)               -> runs/helmetnet_overhead.pt
 python eval_ocr.py test           # plate OCR evaluation
 python pipeline.py --eval         # violation-level evaluation + annotated outputs       -> outputs/
 python pipeline.py --image some.jpg
@@ -114,3 +116,13 @@ python pipeline.py --video some.mp4
 | `helmetnet.py`, `train_helmet.py` | second-stage helmet classifier (helmet / no helmet / not a rider) and its training |
 | `pipeline.py` | complete violation system |
 | `app.py` | Gradio web demo (image, compare, video) |
+
+## Fixed traffic cameras (video demo)
+
+The seat-belt camera looks straight down at the road and its dataset labels no motorbikes, so with the label mask
+the detector never learns top-view riders. For a fixed camera the video demo therefore also finds two-wheelers by
+background subtraction (median background, threshold, morphology, connected components; blobs inside detected cars
+are removed) and judges the helmet with a classifier fine-tuned on 530 top-view crops labelled by eye
+(`data/processed/overhead/labels.txt`, H / N / X, with contact sheets for checking). On 58 held-out test crops
+(same time-range split as the detector) accuracy rises from 0.50 (street-level classifier) to 0.83
+(`results/helmet_overhead.txt`). Small set: about 15 distinct riders.

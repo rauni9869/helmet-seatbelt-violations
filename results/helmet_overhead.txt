@@ -1,0 +1,13 @@
+street-level classifier (before) on overhead val: accuracy 0.4808 | recall per class: helmet 0.407 (n=27) no helmet 0.278 (n=36) not a rider 0.707 (n=41)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[11, 6, 10], [3, 10, 23], [10, 2, 29]]
+street-level classifier (before) on overhead test: accuracy 0.5000 | recall per class: helmet 0.500 (n=20) no helmet 0.133 (n=15) not a rider 0.739 (n=23)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[10, 4, 6], [4, 2, 9], [5, 1, 17]]
+selected epoch 4 (balanced val accuracy 0.885)
+overhead classifier (after) on overhead val: accuracy 0.8750 | recall per class: helmet 0.926 (n=27) no helmet 0.972 (n=36) not a rider 0.756 (n=41)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[25, 1, 1], [1, 35, 0], [9, 1, 31]]
+overhead classifier (after) on overhead test: accuracy 0.8276 | recall per class: helmet 0.850 (n=20) no helmet 0.867 (n=15) not a rider 0.783 (n=23)
+  confusion (rows true, cols predicted ['helmet', 'no helmet', 'not a rider']):
+  [[17, 3, 0], [1, 13, 1], [3, 2, 18]]
